@@ -17,10 +17,12 @@ body, html {
 
  -------------------------------- */
 #wrapper{
-    background: #4774e6;
-    background: -moz-linear-gradient(-45deg, #4774e6 0%, #1f1e8a 100%);
-    background: -webkit-linear-gradient(-45deg, #4774e6 0%, #1f1e8a 100%);
-    background: linear-gradient(135deg, #1f1e8a 0%, #4774e6 100%);
+
+    background: rgb(95,120,233);
+    background: -moz-linear-gradient(5deg, rgba(95,120,233,1) 9%, rgba(150,167,246,1) 47%, rgba(148,187,233,1) 79%);
+    background: -webkit-linear-gradient(5deg, rgba(95,120,233,1) 9%, rgba(150,167,246,1) 47%, rgba(148,187,233,1) 79%);
+    background: linear-gradient(5deg, rgba(95,120,233,1) 9%, rgba(150,167,246,1) 47%, rgba(148,187,233,1) 79%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#5f78e9",endColorstr="#94bbe9",GradientType=1);
     position: relative;
     height: 100%;
 }
@@ -484,6 +486,7 @@ nav #menu li a {
 
 
 #aboutme{
+    position: relative;
     display: grid;
     grid-template-columns: 40% 60%;
     grid-template-rows: 100vh;
@@ -491,11 +494,15 @@ nav #menu li a {
 
 .block1{
     position: relative;
-    background: #F7515E;
+    background: rgb(95,120,233);
+    background: -moz-linear-gradient(5deg, rgba(95,120,233,1) 9%, rgba(150,167,246,1) 47%, rgba(148,187,233,1) 79%);
+    background: -webkit-linear-gradient(5deg, rgba(95,120,233,1) 9%, rgba(150,167,246,1) 47%, rgba(148,187,233,1) 79%);
+    background: linear-gradient(5deg, rgba(95,120,233,1) 9%, rgba(150,167,246,1) 47%, rgba(148,187,233,1) 79%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#5f78e9",endColorstr="#94bbe9",GradientType=1);
 }
 
 .block1 h1{
-    color: #4774e6;
+    color: #4774e6 ;
     font-family: SF-Pro-Display-Bold;
     font-size: 4em;
     text-transform: uppercase;
@@ -506,8 +513,10 @@ nav #menu li a {
 }
 
 .block2{
+    position: relative;
     background: #4774e6;
 }
+
 
 @media (max-width: 1024px) {
     .block1 h1{
@@ -534,16 +543,73 @@ nav #menu li a {
 footer{
     height: 25%;
     width: 100%;
-    background: teal;
+    background: #F7515E;
     position: relative;
 }
 
-.test{
-    top: -25%;
+
+footer p{
+    color: white;
+    font-family: SF-Pro-Display-light;
     position: absolute;
-    width: 25%;
-    height: 40%;
-    background: mediumspringgreen;
+    top: 43%;
+    right:45%;
+}
+
+footer ul{
+    display: inline-flex;
+}
+
+
+
+
+.hvr-shutter-out-horizontal {;
+    right: 10%;
+    top: 35%;
+    border: 3px solid white;
+    text-transform: uppercase;
+    font-family: SF-Pro-Display-light;
+    font-size: 1.5em;
+    padding: 5px 20px;
+    color: white;
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: absolute;
+    background: transparent;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+.hvr-shutter-out-horizontal:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #879ef2;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 50%;
+    transform-origin: 50%;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+.hvr-shutter-out-horizontal:hover, .hvr-shutter-out-horizontal:focus, .hvr-shutter-out-horizontal:active {
+    color: black;
+}
+.hvr-shutter-out-horizontal:hover:before, .hvr-shutter-out-horizontal:focus:before, .hvr-shutter-out-horizontal:active:before {
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
 }
 
 /*-------------------------
@@ -635,7 +701,7 @@ footer{
 
     .block1 h1 {
         transform: rotate(0deg);
-        top: 82%;
+        top: 84%;
         left: 0;
         width: 100%;
     }
@@ -658,6 +724,21 @@ footer{
     nav #menu {
         display: none;
     }
+    footer{
+        height: 35%;
+    }
+    footer p{
+        top: 35%;
+        right: 15.3%;
+    }
+
+    .hvr-shutter-out-horizontal{
+        top: 62%;
+        right: 37%;
+    }
+
+
+
 
     @media (min-width: 768px) {
         #resize {
