@@ -8,3 +8,8 @@
     font-family: SF-Pro-Display-Bold;
     src: url("SF Pro/SF-Pro-Display-Bold.otf");
 }
+
+@font-face {
+    font-family: SFCompactDisplay-Thin;
+    src: url("SF Compact/SFCompactDisplay-Thin.otf");
+}

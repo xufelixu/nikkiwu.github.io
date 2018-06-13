@@ -212,7 +212,7 @@ nav #menu li a {
     font-family: SF-Pro-Display-Bold;
 }
  #grid p {
-     font-family: SF-Pro-Display-light;
+     font-family: SFCompactDisplay-Thin;
  }
 
 .item1, .item4, .item5{
@@ -272,7 +272,7 @@ nav #menu li a {
 }
 
 .titlephotography{
-
+    padding: 20px 10px;
     display: inline-flex;
     text-transform: uppercase;
 }
@@ -485,53 +485,113 @@ nav #menu li a {
 ----------------------- */
 
 
-#aboutme{
+#aboutme, #aboutme2{
     position: relative;
-    display: grid;
-    grid-template-columns: 40% 60%;
-    grid-template-rows: 100vh;
+    height: 100%;
+    background: #22222A;
 }
 
+
 .block1{
-    position: relative;
-    background: rgb(95,120,233);
-    background: -moz-linear-gradient(5deg, rgba(95,120,233,1) 9%, rgba(150,167,246,1) 47%, rgba(148,187,233,1) 79%);
-    background: -webkit-linear-gradient(5deg, rgba(95,120,233,1) 9%, rgba(150,167,246,1) 47%, rgba(148,187,233,1) 79%);
-    background: linear-gradient(5deg, rgba(95,120,233,1) 9%, rgba(150,167,246,1) 47%, rgba(148,187,233,1) 79%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#5f78e9",endColorstr="#94bbe9",GradientType=1);
+    font-family: SF-Pro-Display-light;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+
+}
+
+.block1 h1, .block1 h2{
+    font-size: 11em;
+    line-height: 73%;
 }
 
 .block1 h1{
-    color: #4774e6 ;
-    font-family: SF-Pro-Display-Bold;
-    font-size: 4em;
-    text-transform: uppercase;
-    transform: rotate(-90deg);
+    color: white;
+}
+
+.block1 h2{
+    color: #3E3E4D;
     position: absolute;
-    top: 30%;
-    right: -27.3%;
+    left: 57%;
 }
 
-.block2{
+.abouttitle h4, .skills-service h4, .randomfacts h4{
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    font-family: SF-Pro-Display-Bold;
+    position: absolute;
+    color: #4A4A5D;
+    left: 10%;
+}
+
+.abouttitle h4{
+    top: 65%;
+}
+
+.abouttitle p{
+    top: 65%;
+}
+
+.abouttitle p, .randomfacts p, .skills-service p {
+    font-weight: 400;
+    line-height: 2;
+    font-family: SFCompactDisplay-Thin;
+    width: 50%;
+    color: white;
+    position: absolute;
+    left: 44%;
+
+}
+
+.skills-service p {
+    word-spacing: 50px;
+    top: 110%;
+    z-index: 1;
+
+}
+.skills-service h4{
+    top: 110%;
+    z-index: 1;
+}
+
+
+
+.randomfacts h4{
+    top: 40%;
+}
+
+.randomfacts p{
+    top: 40%;
+}
+
+.randomfacts strong {
+    background: #E03A3E;
+}
+
+.randomfacts span {
+    background: #000000;
+    color: #E03A3E;
+    font-size: 20px;
+    height: 26px;
+    letter-spacing: 1px;
+    line-height: 23px;
     position: relative;
-    background: #4774e6;
+    text-align: center;
+    text-transform: uppercase;
+    top: 0px;
+    left: 109px;
+    display: none;
+    width: 58%;
 }
 
-
-@media (max-width: 1024px) {
-    .block1 h1{
-        right: -34.3%;
-    }
+.randomfacts span:after{
+    content:'';
+    position:absolute;
 }
 
-@media (min-width: 1440px) {
-    .block1 h1{
-        right: -30.3%;
-        font-size: 5em;
-    }
+.randomfacts p:hover span{
+    display:block;
 }
-
-
 /*-------------------------
 
         FOOTER  
@@ -543,7 +603,7 @@ nav #menu li a {
 footer{
     height: 25%;
     width: 100%;
-    background: #F7515E;
+    background: #6884cc;
     position: relative;
 }
 
@@ -592,7 +652,7 @@ footer ul{
     bottom: 0;
     left: 0;
     right: 0;
-    background: #879ef2;
+    background: floralwhite;
     -webkit-transform: scaleX(0);
     transform: scaleX(0);
     -webkit-transform-origin: 50%;
@@ -694,18 +754,6 @@ footer ul{
         background: #DFE1E4;
     }
 
-    #aboutme {
-        grid-template-columns: 100vw;
-        grid-template-rows: 50vh 50vh;
-    }
-
-    .block1 h1 {
-        transform: rotate(0deg);
-        top: 84%;
-        left: 0;
-        width: 100%;
-    }
-
     #toggle {
         visibility: visible;
         opacity: 1;
@@ -725,16 +773,16 @@ footer ul{
         display: none;
     }
     footer{
-        height: 35%;
+        height: 14%;
     }
     footer p{
-        top: 35%;
-        right: 15.3%;
+        top: 13%;
+        right: 12.3%;
     }
 
     .hvr-shutter-out-horizontal{
-        top: 62%;
-        right: 37%;
+        top: 42%;
+        right: 25%;
     }
 
 
@@ -749,7 +797,55 @@ footer ul{
 
 
 
+@media (max-width: 812px) {
+    #aboutme2{
+        height: 35%
+    }
 
+    .block1 h1, .block1 h2{
+        font-size: 6em;
+    }
+
+  .abouttitle h4{
+      top: 36%;
+  }
+    .skills-service h4{
+        top: 84%;
+    }
+
+    .randomfacts h4{
+        top: 6%;
+    }
+
+    .skills-service h3 {
+
+        left: 10%;
+        width: 80%;
+    }
+
+    .abouttitle p, .randomfacts p, .skills-service p{
+        line-height: 1.6;
+        font-size: 1em;
+        left: 10%;
+        width: 80%;
+  }
+
+    .abouttitle p{
+        top: 42%;
+    }
+    .skills-service p{
+        top: 91%;
+    }
+
+    .randomfacts p{
+        top: 23%;
+    }
+
+    .titlephotography h2{
+        font-size: 1.3em;
+    }
+
+}
 
 
 
