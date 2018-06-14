@@ -115,6 +115,7 @@ nav #menu li {
 nav #menu li a {
     color: #fff;
     font-weight: 200;
+    font-size: 14px;
 }
 
 #toggle {
@@ -195,17 +196,7 @@ nav #menu li a {
     opacity: 0.99;
 }
 
-.icons{
-    display: flex;
-    position: relative;
-    z-index: 1;
-}
 
-.icons ul li{
-    color: white;
-    position: absolute;
-    z-index: 1;
-}
 /*-------------------------
 
         GRID
@@ -226,10 +217,21 @@ nav #menu li a {
      font-family: SFCompactDisplay-Thin;
  }
 
+ .item1{
+     color: #c887fb;
+ }
+ 
+ .item4{
+     color: #ffd392;
+ }
+
+ .item5{
+     color: #6fb1fd;
+ }
 .item1, .item4, .item5{
     align-items: center;
     position: relative;
-    background: white;
+    background: #22222A;
 }
 
 .item1 h2, .item4 h2, .item5 h2{
@@ -249,28 +251,16 @@ nav #menu li a {
 
 }
 
-.item2 {
-    background: #DFE1E4;
-    position: relative;
-
-}
-
-.item3 {
-    background: #F7515E;
+.item2, .item6, .item3{
+    background: floralwhite;
     position: relative;
     align-items: center;
 }
+
  .item3 p, .item3 h2{
      display: none;
  }
 
-
-
-
-
-.item6 {
-    background: #DFE1E4;
-}
 
 
 /*-------------------------
@@ -278,9 +268,6 @@ nav #menu li a {
         PHOTOS
 
 ----------------------- */
-#controls{
-    font-family: SF-Pro-Display-light;
-}
 
 .titlephotography{
     padding: 20px 10px;
@@ -290,6 +277,7 @@ nav #menu li a {
 
 .titlephotography h1 {
     padding-left: 10px;
+    color: white;
 }
 
 .titlephotography h2{
@@ -325,7 +313,9 @@ nav #menu li a {
 }
 
 #controls {
-    margin-bottom: 2rem;
+    font-family: SF-Pro-Display-light;
+    background: #4A4A5D;
+    color: white;
 }
 #controls ul {
     list-style: none;
@@ -341,6 +331,7 @@ nav #menu li a {
 }
 #controls ul li:hover {
     background: #eee;
+    color: #E03A3E;
 }
 @media (min-width: 400px) {
     #controls ul li {
@@ -350,10 +341,10 @@ nav #menu li a {
 }
 #controls ul .active {
     background: #444;
-    color: white;
+    color: #E03A3E;
 }
 #controls ul .active:hover {
-    color: #444;
+    color: black;
 }
 
 .grid-wrapper {
@@ -362,7 +353,7 @@ nav #menu li a {
     grid-template-rows: auto;
     grid-gap: 1rem;
     justify-items: center;
-    margin: 1rem;
+    background: #4A4A5D;
 }
 
 @media (min-width: 500px) {
@@ -626,27 +617,28 @@ footer{
     -ms-flex-pack: center;
     justify-content: center;
     padding: 0 10px;
+    z-index: 21;
 }
 
-
-footer p{
+.footer-item {
     color: white;
-    font-family: SF-Pro-Display-light;
-    position: absolute;
-    top: 43%;
-    right:45%;
+    margin-bottom: 25px;
+    text-decoration: none;
 }
 
-footer ul{
+.footer-item img{
+    height: 1.7em;
+    width: auto;
 }
 
-
-
-
-.hvr-shutter-out-horizontal {;
-    right: 10%;
-    top: 35%;
-    border: 3px solid white;
+.hvr-shutter-out-horizontal {
+    left: -167%;
+    top: -134%;
+    width: 188px;
+    transform: rotate(-90deg);
+    border-bottom: 2px solid white;
+    border-left: 2px solid white;
+    border-right: 2px solid white;
     text-transform: uppercase;
     font-family: SF-Pro-Display-light;
     font-size: 1.5em;
@@ -654,8 +646,6 @@ footer ul{
     color: white;
     display: inline-block;
     vertical-align: middle;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
     box-shadow: 0 0 1px rgba(0, 0, 0, 0);
     position: absolute;
     background: transparent;
@@ -672,7 +662,7 @@ footer ul{
     bottom: 0;
     left: 0;
     right: 0;
-    background: floralwhite;
+    background: #6fb1fd;
     -webkit-transform: scaleX(0);
     transform: scaleX(0);
     -webkit-transform-origin: 50%;
@@ -743,21 +733,23 @@ footer ul{
     }
 
     .item3, .item5 {
-        background: white;
+        background: #22222A;
     }
 
     .item3 p, .item3 h2 {
         display: block;
     }
 
-    .item3 h2 {
+    .item3 h2  {
         position: absolute;
         text-align: left;
         top: 20%;
         left: 20%;
+        color: #ffd392;
     }
 
     .item3 p {
+        color: #ffd392;
         text-align: left;
         position: absolute;
         top: 40%;
@@ -765,16 +757,12 @@ footer ul{
         width: 70%;
     }
 
-    .item4 {
-        background: #F7515E;
+    .item4, .item6{
+        background: floralwhite;
     }
 
     .item4 p, .item4 h2 {
         display: none;
-    }
-
-    .item6 {
-        background: #DFE1E4;
     }
 
     #toggle {
@@ -798,10 +786,7 @@ footer ul{
     footer{
         height: 14%;
     }
-    footer p{
-        top: 13%;
-        right: 12.3%;
-    }
+
 
     .hvr-shutter-out-horizontal{
         top: 42%;
@@ -821,8 +806,11 @@ footer ul{
 
 
 @media (max-width: 812px) {
+    .hvr-shutter-out-horizontal{
+        display: none;
+    }
     #aboutme2{
-        height: 35%
+        height: 59%
     }
 
     .block1 h1, .block1 h2{
