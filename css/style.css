@@ -46,7 +46,7 @@ body, html {
 
 .content h1 {
     color: #fff;
-    font-family: SF-Pro-Display-Bold;
+    font-family: SF-Pro-Display-light;
     font-weight: 200;
     font-size: 6em;
 }
@@ -252,7 +252,7 @@ nav #menu li a {
 }
 
 .item2, .item6, .item3{
-    background: floralwhite;
+    background: #4A4A5D;
     position: relative;
     align-items: center;
 }
@@ -268,7 +268,6 @@ nav #menu li a {
         PHOTOS
 
 ----------------------- */
-
 .titlephotography{
     padding: 20px 10px;
     display: inline-flex;
@@ -395,84 +394,72 @@ nav #menu li a {
     }
 }
 .urban-1 {
-    background: url(https://unsplash.it/1500?image=1075);
+    background: url("../img/urban1.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .urban-2 {
-    background: url(https://unsplash.it/1500?image=1067);
+    background: url("../img/urban2.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .urban-3 {
-    background: url(https://unsplash.it/1500?image=1033);
+    background: url("../img/urban3.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-.urban-4 {
-    background: url(https://unsplash.it/1500?image=983);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
 
 .landscape-1 {
-    background: url(https://unsplash.it/1500?image=961);
+    background: url("../img/landscape1.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .landscape-2 {
-    background: url(https://unsplash.it/1500?image=916);
+    background: url("../img/landscape2.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .landscape-3 {
-    background: url(https://unsplash.it/1500?image=901);
+    background: url("../img/landscape3.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-.landscape-4 {
-    background: url(https://unsplash.it/1500?image=876);
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-}
 
 .portrait-1 {
-    background: url(https://unsplash.it/1500?image=978);
+    background: url("../img/portrait1.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .portrait-2 {
-    background: url(https://unsplash.it/1500?image=996);
+    background: url("../img/portrait2.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .portrait-3 {
-    background: url(https://unsplash.it/1500?image=1027);
+    background: url("../img/portrait3.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .portrait-4 {
-    background: url(https://unsplash.it/1500?image=838);
+    background: url("../img/portrait4.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -633,7 +620,7 @@ footer{
 
 .hvr-shutter-out-horizontal {
     left: -167%;
-    top: -134%;
+    top: -86%;
     width: 188px;
     transform: rotate(-90deg);
     border-bottom: 2px solid white;
@@ -758,7 +745,7 @@ footer{
     }
 
     .item4, .item6{
-        background: floralwhite;
+        background: #4A4A5D;
     }
 
     .item4 p, .item4 h2 {
@@ -810,7 +797,7 @@ footer{
         display: none;
     }
     #aboutme2{
-        height: 59%
+        height: 87%;
     }
 
     .block1 h1, .block1 h2{
@@ -821,11 +808,11 @@ footer{
       top: 36%;
   }
     .skills-service h4{
-        top: 84%;
+        top: 94%;
     }
 
     .randomfacts h4{
-        top: 6%;
+        top: 24%;
     }
 
     .skills-service h3 {
@@ -845,11 +832,11 @@ footer{
         top: 42%;
     }
     .skills-service p{
-        top: 91%;
+        top: 104%;
     }
 
     .randomfacts p{
-        top: 23%;
+        top: 36%;
     }
 
     .titlephotography h2{
