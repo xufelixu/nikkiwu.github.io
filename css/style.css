@@ -27,8 +27,7 @@ body, html {
     height: 100%;
 }
 
-.content{
-}
+
 .half-1 {
     position: absolute;
     top: 30%;
@@ -71,7 +70,7 @@ hr {
 
 
 nav {
-    width: 100%;
+    width: 95%;
     background: transparent;
     height: 70px;
     position: static;
@@ -93,7 +92,7 @@ nav #brand a {
     transition: all 0.3s ease-out;
     font-family: SF-Pro-Display-light;
     font-weight: 300;
-    font-size: 14px;
+    font-size: 15px;
 }
 
 nav #menu {
@@ -103,9 +102,13 @@ nav #menu {
     position: relative;
 }
 
+nav #menu li a:hover{
+     color: #f7515e;
+ }
+
 nav #menu li {
     display: inline-block;
-    padding: 0px 30px;
+    padding: 0px 20px;
     cursor: pointer;
     line-height: 70px;
     position: relative;
@@ -115,7 +118,7 @@ nav #menu li {
 nav #menu li a {
     color: #fff;
     font-weight: 200;
-    font-size: 14px;
+    font-size: 15px;
 }
 
 #toggle {
@@ -845,5 +848,15 @@ footer{
 
 }
 
+
+@media (min-width: 1050px) {
+    nav #menu{
+        left: 67%;
+    }
+
+    nav #brand{
+        margin-left: 49px;
+    }
+}
 
 
